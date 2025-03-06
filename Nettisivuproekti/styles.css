@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: #6e0eb1;
-  padding: 30px;
+  padding: 20px;
   width: 100%;
   
 }
@@ -28,7 +28,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 90px;
+  gap: 100px;
   padding: 0;
   margin: 0;
 }
@@ -36,7 +36,7 @@ nav ul {
 nav ul li a {
   color: #dddddd;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 23px;
 }
 
 .main {
@@ -89,7 +89,10 @@ footer {
 @media (max-width: 768px) {
   nav ul {
       flex-direction: column;
-      gap: 10px;
+      gap: 7px;
+
+
+      
   }
 
   .overlay {
