@@ -84,3 +84,7 @@ footer{
     font-size: 20px;
     padding: 20px;
 }
+iframe
+{
+  margin: 0 auto;
+}
