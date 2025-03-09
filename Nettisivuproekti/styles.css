@@ -1,6 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-html,
-body {
+html,body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -16,14 +20,13 @@ header {
   background-color: #6e0eb1;
   padding: 20px;
   width: 100%;
-  
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 90px;
   padding: 0;
   margin: 0;
 }
@@ -42,6 +45,22 @@ nav ul li a {
   justify-content: center;
   width: 100%;
   position: relative;
+}
+
+.kartta {
+position: absolute;
+  width:100%;
+  bottom: 30%;
+  height: 40%;
+
+}
+
+.kalenteri {
+background-color: #fffffd;
+}
+
+.yhteystiedotText {
+margin: 20px;
 }
 
 .overlay {
@@ -79,16 +98,6 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-}
-
-.kartta {
-  align-items: center;
-  justify-content: center;
-  width:100%;
-}
-
-.kalenteri {
-background-color: #fffffd;
 }
 
 @media (max-width: 768px) {
