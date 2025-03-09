@@ -87,6 +87,9 @@ footer {
   width:100%;
 }
 
+.kalenteri {
+background-color: #fffffd;
+}
 
 @media (max-width: 768px) {
   nav ul {
