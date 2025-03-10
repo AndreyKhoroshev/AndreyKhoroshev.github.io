@@ -58,9 +58,11 @@ nav ul li a {
 }
 
 .kalenteri {
+  position: relative;
   background-color: #fffffd;
-  height: 80vh;
+  height: 87vh;
   width: 100%;
+  border: 0;
 
 }
 
