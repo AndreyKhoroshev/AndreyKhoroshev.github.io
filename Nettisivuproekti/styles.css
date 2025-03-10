@@ -58,9 +58,7 @@ footer{
     font-size: 20px;
     padding: 20px;
 }
-iframe
-{
-  margin: 0 auto;
+
 .overlay {
   background: rgba(0, 0, 0, 0.6);
   padding: 20px;
@@ -123,4 +121,8 @@ footer {
       padding: 8px 16px;
       font-size: 14px;
   }
+}
+
+iframe {
+  margin: 0 auto;
 }
