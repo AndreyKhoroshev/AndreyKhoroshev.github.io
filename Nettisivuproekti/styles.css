@@ -59,6 +59,9 @@ nav ul li a {
 
 .kalenteri {
   background-color: #fffffd;
+  height: 80vh;
+  width: 100%;
+
 }
 
 .yhteystiedotText {
