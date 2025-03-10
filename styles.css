@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #1c1c1c;
+  font-family: "Tw Cen MT", sans-serif;
+  color: #dddddd;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #6e0eb1;
+  padding: 20px;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #dddddd;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.main {
+  flex: 1;
+  background: url('KeilausBG.jpeg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.kartta {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 45vh;
+  margin-top: 20px;
+  border:0; 
+}
+
+.kalenteri {
+  position: relative;
+  background-color: #fffffd;
+  height: 87vh;
+  width: 100%;
+  border: 0;
+
+}
+
+.yhteystiedotText {
+  position: relative;
+  z-index: 2;
+  margin: 20px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 60px 30px;
+  background: url('ball.png') no-repeat center center/cover;
+  border-radius: 40px;
+  margin-top: 40px;
+  color:#dddddd; 
+  font-size: 21px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #2d2d2d;
+  color: #dddddd;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 7px;
+  }
+  .overlay {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    padding: 60px 30px;
+  }
+  .kalenteri{
+  height: 68vh;
+}
+}
