@@ -52,7 +52,7 @@ nav ul li a {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 340px;
+  height: 650px;
   margin-top: 20px;
 
 }
@@ -110,6 +110,10 @@ footer {
     flex-direction: column;
     gap: 7px;
   }
+  .kartta {
+    width: 100%;
+  height: 360px;
+}
 
   .overlay {
     padding: 10px;
@@ -126,4 +130,11 @@ footer {
   .cta-button {
     padding: 60px 30px;
   }
+}
+
+  @media (max-width: 400px) {
+  .kartta {
+    width: 100%;
+  height: 280px;
+}
 }
