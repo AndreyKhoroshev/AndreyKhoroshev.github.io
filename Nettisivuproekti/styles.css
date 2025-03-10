@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -48,19 +49,19 @@ nav ul li a {
 }
 
 .kartta {
-position: absolute;
-  width:100%;
+  position: absolute;
+  width: 100%;
   bottom: 30%;
   height: 40%;
 
 }
 
 .kalenteri {
-background-color: #fffffd;
+  background-color: #fffffd;
 }
 
 .yhteystiedotText {
-margin: 20px;
+  margin: 20px;
 }
 
 .overlay {
@@ -102,24 +103,24 @@ footer {
 
 @media (max-width: 768px) {
   nav ul {
-      flex-direction: column;
-      gap: 7px;     
+    flex-direction: column;
+    gap: 7px;
   }
 
   .overlay {
-      padding: 10px;
+    padding: 10px;
   }
 
   h1 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   h2 {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .cta-button {
-      padding: 8px 16px;
-      font-size: 14px;
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }
