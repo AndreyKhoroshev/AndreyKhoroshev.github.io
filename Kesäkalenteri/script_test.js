@@ -115,7 +115,9 @@ function openModal(titleText, contentText) {
 }
 
 document.getElementById("close").addEventListener("click", () => {
-  document.getElementById("modal").classList.add("hidden");
+  const modal = document.getElementById("modal");
+  modal.classList.add("hidden");
+  document.getElementById("modal-content").innerHTML = "";
 });
 
 /*
