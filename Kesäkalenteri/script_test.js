@@ -87,6 +87,21 @@ Object.entries(monthGroups).forEach(([month, days]) => {
   );
   day.classList.add("clickable");
 
+} else if (dateKey === new Date("2025-06-20").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "20.6.2025 – Hyvää juhannusta!", "Nauti kesästä! 🌞🎉",
+      `
+      <p>Heinäkuun katti!:</p>
+      <div style="margin-top: 10px;">
+        <img src="https://t3.ftcdn.net/jpg/01/03/64/44/360_F_103644471_eKnH4wVwEzgkLsiZrPtgkd4IcfTuaa14.jpg" 
+             alt="Kesäkuva" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    )
+  );
+  day.classList.add("clickable");
+
+
     // Tulevat päivät lukittu
     } else if (!isPastOrToday) {
       day.classList.add("locked");
@@ -119,6 +134,8 @@ document.getElementById("close").addEventListener("click", () => {
   modal.classList.add("hidden");
   document.getElementById("modal-content").innerHTML = "";
 });
+
+
 
 /*
 Uuden tapahtuman lisääminen:
