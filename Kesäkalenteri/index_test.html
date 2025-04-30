@@ -1,0 +1,34 @@
+<!-- 
+Uusi systeemi ja layout. script_test.js löytyy sisällön lisäämiseen ohjeita ja esimerkkejä. 
+Uusi päivä voidaan luoda kopioimalla teksti esimerkki 19.5, video esimerkki 2.6 tai video esimerkki 20.7.
+Kopioit koko lohkon ja vaihdat päivämäärän. Esimerkiksi:
+
+} else if (dateKey === new Date("2025-08-11").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+-->
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>TIKOn Kesäkalenteri</title>
+  <link rel="stylesheet" href="style_test.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>TIKOn Kesäkalenteri 2025</h1>
+
+  <div id="calendar-container"></div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-content"></p>
+    </div>
+  </div>
+
+  <script src="script_test.js"></script>
+</body>
+</html>
