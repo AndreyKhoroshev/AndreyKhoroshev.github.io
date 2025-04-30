@@ -64,7 +64,7 @@ Object.entries(monthGroups).forEach(([month, days]) => {
           <p>Tänään fiilistellään klassikkobiisillä</p>
           <div style="margin-top: 10px;">
             <iframe width="100%" height="215" 
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&autohide=1&showinfo=0" 
+              src="https://www.youtube.com/embed/U2Fjfqm-7g8?rel=0&autohide=1&showinfo=0" 
               title="YouTube video player" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen></iframe>
