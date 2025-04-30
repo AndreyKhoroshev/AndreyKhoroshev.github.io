@@ -87,6 +87,32 @@ Object.entries(monthGroups).forEach(([month, days]) => {
   );
   day.classList.add("clickable");
 
+} else if (dateKey === new Date("2025-06-20").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "20.6.2025 – Juhannus 🌸🎉",
+      `
+      <p>Hyvää juhannusta! Rentoudu, nauti luonnosta ja valoisasta yöstä.</p>`
+    )
+  );
+  day.classList.add("clickable");
+}
+
+// 10.8. – laatikon taustakuva
+} else if (dateKey === new Date("2025-08-10").toDateString()) {
+  day.style.backgroundImage = "url('https://media.istockphoto.com/id/1404630379/vector/8bit-pixel-jungle-landscape-game-level-background.jpg?s=612x612&w=0&k=20&c=BlGmcaGYseeUyQL5MmGOA6IBIixKYv18EQbw8VKqg7Q=')";
+  day.style.backgroundSize = "cover";
+  day.style.color = "#fff"; // Parantaa luettavuutta
+  day.classList.add("clickable");
+
+  day.addEventListener("click", () =>
+    openModal(
+      "10.8.2025 – testi",
+      `
+      <p>testi</p>`
+    )
+  );
+}
     // Tulevat päivät lukittu
     } else if (!isPastOrToday) {
       day.classList.add("locked");
