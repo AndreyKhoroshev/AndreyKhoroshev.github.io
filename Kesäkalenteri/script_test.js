@@ -176,6 +176,21 @@ Object.entries(monthGroups).forEach(([month, days]) => {
   );
   day.classList.add("clickable");
 
+} else if (dateKey === new Date("2025-06-26").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "26.06.2025",
+      `
+      <p>Craft Beer Helsinki festival</p>
+      <a href="https://craftbeerhelsinki.fi/" </a>
+      <div style="margin-top: 10px;">
+        <img src="https://craftbeerhelsinki.fi/wp-content/uploads/2022/11/CBH_black-300x201.png" 
+             alt="craftbeerfest" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    )
+  );
+  day.classList.add("clickable");
+
     // Tulevat päivät lukittu
     } else if (!isPastOrToday) {
       day.classList.add("locked");
