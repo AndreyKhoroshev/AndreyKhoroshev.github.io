@@ -134,13 +134,28 @@ Object.entries(monthGroups).forEach(([month, days]) => {
 } else if (dateKey === new Date("2025-06-6").toDateString()) {
   day.addEventListener("click", () =>
     openModal(
-      "27.05.2025",
+      "6.06.2025",
       `
       <p>Aivopihalla jytisee taas punk!</p>
       <a href="https://www.elmu.fi/tapahtumakalenteri/aivopiha" </a>
       <div style="margin-top: 10px;">
         <img src="https://images.squarespace-cdn.com/content/v1/602d5d917cb8834f84eb6399/1744740090707-YWEYDDM9R9O8Q0H8SKVT/Aivopiha_posteri_A4.jpg?format=1500w" 
              alt="aivopiha poster" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    )
+  );
+  day.classList.add("clickable");
+
+} else if (dateKey === new Date("2025-06-9").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "9.06.2025",
+      `
+      <p>Helsinki Samba Carnaval 2025</p>
+      <a href="https://www.myhelsinki.fi/fi/events/helsinki-samba-carnaval-2025-2/" </a>
+      <div style="margin-top: 10px;">
+        <img src="https://www.myhelsinki.fi/wp-content/uploads/2024/11/DSC01883samba-1.jpg-1.jpg" 
+             alt="carnaval" style="width: 100%; border-radius: 8px;" />
       </div>`
     )
   );
