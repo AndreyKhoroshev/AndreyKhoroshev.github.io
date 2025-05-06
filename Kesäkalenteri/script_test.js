@@ -161,6 +161,21 @@ Object.entries(monthGroups).forEach(([month, days]) => {
   );
   day.classList.add("clickable");
 
+} else if (dateKey === new Date("2025-06-13").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "13.06.2025",
+      `
+      <p>Helsinki City Festival</p>
+      <a href="https://www.helsinkicityfestival.fi/" </a>
+      <div style="margin-top: 10px;">
+        <img src="https://tapahtumainfo.fi/artikkelikuvat/343475.jpg" 
+             alt="helsinkicityfest" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    )
+  );
+  day.classList.add("clickable");
+
     // Tulevat päivät lukittu
     } else if (!isPastOrToday) {
       day.classList.add("locked");
