@@ -53,7 +53,7 @@ Object.entries(monthGroups).forEach(([month, days]) => {
       day.addEventListener("click", () =>
         openModal("19.5.2025", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae.")
       );
-      day.classList.add("clickable");
+      day.classList.add("clickable"); 
 
     // Esimerkki: 2.6. YouTube-video
     } else if (dateKey === new Date("2025-06-02").toDateString()) {
@@ -260,11 +260,27 @@ Object.entries(monthGroups).forEach(([month, days]) => {
       <a href="https://alapark.fi/fi/" </a>
       <div style="margin-top: 10px;">
         <img src="https://alapark.fi/fileadmin/user_upload/Festivals/a_la_park/ALP_lanseeraus_1920x1080_1.jpg" 
-             alt="jytafest" style="width: 100%; border-radius: 8px;" />
+             alt="alaparposter" style="width: 100%; border-radius: 8px;" />
       </div>`
     )
   );
   day.classList.add("clickable")
+
+} else if (dateKey === new Date("2025-08-8").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "8.08.2025." ,
+      `
+      <p> Vauhti kiihtyy! -festivaali</p>
+      <a href="https://vauhtikiihtyyfestival.fi/event/vantaa-2025/"</a>
+      <div style="margin-top: 10px;">
+        <img src="https://vauhtikiihtyyfestival.fi/wp-content/uploads/2024/08/1080x1080_vantaa_2025.webp" 
+             alt="vauhtifest" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    )
+  );
+  day.classList.add("clickable")
+
 
     // Tulevat päivät lukittu
     } else if (!isPastOrToday) {
