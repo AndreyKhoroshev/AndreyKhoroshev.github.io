@@ -226,11 +226,26 @@ Object.entries(monthGroups).forEach(([month, days]) => {
     openModal(
       "18.07.2025",
       `
-      <p>Helsinki Stand-Up Open-Mic 18.7.2025</p>
+      <p>Helsinki Stand-Up Open-Mic</p>
       <a href="https://www.myhelsinki.fi/fi/events/helsinki-stand-up-league-open-mic-2/helsinki-stand-up-league-open-mic-18-7-2025/" </a>
       <div style="margin-top: 10px;">
         <img src="https://api.hel.fi/linkedevents/media/images/HSL_icon2.jpg" 
              alt="StandUpHSL" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    )
+  );
+  day.classList.add("clickable")
+
+} else if (dateKey === new Date("2025-07-25").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "25.07.2025",
+      `
+      <p>Jytäkesä Go-Go, rock festival</p>
+      <a href="https://jytakesagogo.com/" </a>
+      <div style="margin-top: 10px;">
+        <img src="https://jytakesagogo.com/wp-content/uploads/2025/02/jytakesa25_uusetusivu.jpg" 
+             alt="jytafest" style="width: 100%; border-radius: 8px;" />
       </div>`
     )
   );
