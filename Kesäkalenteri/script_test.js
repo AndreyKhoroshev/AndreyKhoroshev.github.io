@@ -281,6 +281,20 @@ Object.entries(monthGroups).forEach(([month, days]) => {
   );
   day.classList.add("clickable")
 
+} else if (dateKey === new Date("2025-08-14").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "14.08.2025 - Taiteiden yö." ,
+      `
+      <p> Taiteiden yö kokoaa jälleen yhteen satoja taidetapahtumia</p>
+      <a href="https://helsinkifestival.fi/event/taiteiden-yo/" </a>
+      <div style="margin-top: 10px;">
+        <img src="https://helsinkifestival.fi/app/uploads/sites/8/2022/04/TY1-1440x821.jpeg?ver=772a886c" 
+             alt="taiteidenyo" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    )
+  );
+  day.classList.add("clickable")
 
     // Tulevat päivät lukittu
     } else if (!isPastOrToday) {
