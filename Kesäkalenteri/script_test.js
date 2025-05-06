@@ -131,6 +131,21 @@ Object.entries(monthGroups).forEach(([month, days]) => {
   );
   day.classList.add("clickable");
 
+} else if (dateKey === new Date("2025-06-6").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "27.05.2025",
+      `
+      <p>Aivopihalla jytisee taas punk!</p>
+      <a href="https://www.elmu.fi/tapahtumakalenteri/aivopiha" </a>
+      <div style="margin-top: 10px;">
+        <img src="https://images.squarespace-cdn.com/content/v1/602d5d917cb8834f84eb6399/1744740090707-YWEYDDM9R9O8Q0H8SKVT/Aivopiha_posteri_A4.jpg?format=1500w" 
+             alt="aivopiha poster" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    )
+  );
+  day.classList.add("clickable");
+
     // Tulevat päivät lukittu
     } else if (!isPastOrToday) {
       day.classList.add("locked");
