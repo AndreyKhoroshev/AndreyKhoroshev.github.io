@@ -184,7 +184,7 @@ Object.entries(monthGroups).forEach(([month, days]) => {
       <p>Craft Beer Helsinki festival</p>
       <a href="https://craftbeerhelsinki.fi/" </a>
       <div style="margin-top: 10px;">
-        <img src="https://craftbeerhelsinki.fi/wp-content/uploads/2022/11/CBH_black-300x201.png" 
+        <img src="https://scontent.fqlf1-2.fna.fbcdn.net/v/t39.30808-6/493843300_720709830343143_1737050900153990957_n.png?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=-yaf8Ugm5nAQ7kNvwEM35_K&_nc_oc=AdmXqFgXOP-ZCtQmxlKgLmwn_G44ALnqizPDzoczOAq1s1bcnOu5o_2inUzy7SPd2HqahgN0ZFaKR8E6Ue9V_ZKM&_nc_zt=23&_nc_ht=scontent.fqlf1-2.fna&_nc_gid=ZUgVIMqgP7OV5D-jzJeYKw&oh=00_AfJfocJxOyL3bBWakgtJ6XL7LinoFVOL-7itpl4n3JbqFQ&oe=681FFDEC" 
              alt="craftbeerfest" style="width: 100%; border-radius: 8px;" />
       </div>`
     )
