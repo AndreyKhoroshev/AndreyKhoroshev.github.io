@@ -101,6 +101,20 @@ Object.entries(monthGroups).forEach(([month, days]) => {
   );
   day.classList.add("clickable");
 
+} else if (dateKey === new Date("2025-05-23").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "23.05.2025 – Hassan Maikal Keikka",
+      `
+      <p>Hassan Maikal Keikka:</p>
+      <a href="https://tavastiaklubi.fi/events/2025-05-23/hassan-maikal/107394/" </a>
+      <div style="margin-top: 10px;">
+        <img src="https://images.cdn.yle.fi/image/upload/ar_1.5001532,c_fill,g_faces,h_423,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1634907917/39-8706466172b44cecf65" 
+             alt="Kesäkuva" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    )
+  );
+  day.classList.add("clickable");
 
     // Tulevat päivät lukittu
     } else if (!isPastOrToday) {
