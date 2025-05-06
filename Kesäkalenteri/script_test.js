@@ -110,7 +110,22 @@ Object.entries(monthGroups).forEach(([month, days]) => {
       <a href="https://tavastiaklubi.fi/events/2025-05-23/hassan-maikal/107394/" </a>
       <div style="margin-top: 10px;">
         <img src="https://images.cdn.yle.fi/image/upload/ar_1.5001532,c_fill,g_faces,h_423,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1634907917/39-8706466172b44cecf65" 
-             alt="Kesäkuva" style="width: 100%; border-radius: 8px;" />
+             alt="Hassan Maikal" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    ) 
+  );
+  day.classList.add("clickable");
+
+} else if (dateKey === new Date("2025-05-27").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "27.05.2025",
+      `
+      <p>Kepeästi kevääseen – Kilven Kuoron kevätkonsertti</p>
+      <a href="https://www.stadissa.fi/tapahtumat/110001/kepeasti-kevaaseen-ndash-kilven-kuoron-kevatkonsertti/" </a>
+      <div style="margin-top: 10px;">
+        <img src="http://static.stadissa.fi/events/to_be_moderated/7ad1bf50a29cc2789bb914b52282adbd.png" 
+             alt="Kepeästi kevääseen – Kilven Kuoron kevätkonsertti" style="width: 100%; border-radius: 8px;" />
       </div>`
     )
   );
