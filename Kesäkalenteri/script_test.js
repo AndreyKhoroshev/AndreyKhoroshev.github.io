@@ -221,6 +221,21 @@ Object.entries(monthGroups).forEach(([month, days]) => {
   );
   day.classList.add("clickable")
 
+} else if (dateKey === new Date("2025-07-18").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "18.07.2025",
+      `
+      <p>Helsinki Stand-Up Open-Mic 18.7.2025</p>
+      <a href="https://www.myhelsinki.fi/fi/events/helsinki-stand-up-league-open-mic-2/helsinki-stand-up-league-open-mic-18-7-2025/" </a>
+      <div style="margin-top: 10px;">
+        <img src="https://api.hel.fi/linkedevents/media/images/HSL_icon2.jpg" 
+             alt="StandUpHSL" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    )
+  );
+  day.classList.add("clickable")
+
     // Tulevat päivät lukittu
     } else if (!isPastOrToday) {
       day.classList.add("locked");
