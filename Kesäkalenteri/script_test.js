@@ -251,6 +251,21 @@ Object.entries(monthGroups).forEach(([month, days]) => {
   );
   day.classList.add("clickable")
 
+} else if (dateKey === new Date("2025-08-1").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "1.08.2025 - À la park festivaali." ,
+      `
+      <p> À la Park on kesän herkullisin festivaali. Tapahtuma nivoo yhteen huipputason keikat ja ensiluokkaiset ravintolat idyllisessä puistossa meren rannalla </p>
+      <a href="https://alapark.fi/fi/" </a>
+      <div style="margin-top: 10px;">
+        <img src="https://alapark.fi/fileadmin/user_upload/Festivals/a_la_park/ALP_lanseeraus_1920x1080_1.jpg" 
+             alt="jytafest" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    )
+  );
+  day.classList.add("clickable")
+
     // Tulevat päivät lukittu
     } else if (!isPastOrToday) {
       day.classList.add("locked");
