@@ -191,6 +191,21 @@ Object.entries(monthGroups).forEach(([month, days]) => {
   );
   day.classList.add("clickable");
 
+} else if (dateKey === new Date("2025-07-1").toDateString()) {
+  day.addEventListener("click", () =>
+    openModal(
+      "1.07.2025",
+      `
+      <p>Opastettu saarikierros Harakassa</p>
+      <a href="https://tapahtumat.hel.fi/fi/tapahtumat/helsinki:agk7dh3agy?returnPath=%2Fhaku%3Fend%3D2025-07-13%26eventId%3Dhelsinki%253Aagk7dh3agy%26start%3D2025-07-01" </a>
+      <div style="margin-top: 10px;">
+        <img src="https://api.hel.fi/linkedevents/media/images/harakan_saarikierros_touko-hein%C3%A4.JPG" 
+             alt="saarikierros" style="width: 100%; border-radius: 8px;" />
+      </div>`
+    )
+  );
+  day.classList.add("clickable");
+
     // Tulevat päivät lukittu
     } else if (!isPastOrToday) {
       day.classList.add("locked");
