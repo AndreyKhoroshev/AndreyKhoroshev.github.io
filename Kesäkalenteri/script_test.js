@@ -191,10 +191,10 @@ Object.entries(monthGroups).forEach(([month, days]) => {
   );
   day.classList.add("clickable");
 
-} else if (dateKey === new Date("2025-07-1").toDateString()) {
+} else if (dateKey === new Date("2025-07-5").toDateString()) {
   day.addEventListener("click", () =>
     openModal(
-      "1.07.2025",
+      "5.07.2025",
       `
       <p>Opastettu saarikierros Harakassa</p>
       <a href="https://tapahtumat.hel.fi/fi/tapahtumat/helsinki:agk7dh3agy?returnPath=%2Fhaku%3Fend%3D2025-07-13%26eventId%3Dhelsinki%253Aagk7dh3agy%26start%3D2025-07-01" </a>
@@ -206,16 +206,16 @@ Object.entries(monthGroups).forEach(([month, days]) => {
   );
   day.classList.add("clickable");
 
-} else if (dateKey === new Date("2025-07-5").toDateString()) {
+} else if (dateKey === new Date("2025-07-11").toDateString()) {
   day.addEventListener("click", () =>
     openModal(
-      "5.07.2025",
+      "11.07.2025",
       `
-      <p>Opastettu saarikierros Harakassa</p>
-      <a href="https://tapahtumat.hel.fi/fi/tapahtumat/helsinki:agk7dh3agy?returnPath=%2Fhaku%3Fend%3D2025-07-13%26eventId%3Dhelsinki%253Aagk7dh3agy%26start%3D2025-07-01" </a>
+      <p>Kahoot! Visa-Ilta </p>
+      <a href="https://tapahtumat.hel.fi/fi/tapahtumat/helsinki:agjsku3vzu?returnPath=%2Fhaku%3FeventId%3Dhelsinki%253Aagjsku3vzu%26start%3D2025-07-07" </a>
       <div style="margin-top: 10px;">
-        <img src="https://api.hel.fi/linkedevents/media/images/harakan_saarikierros_touko-hein%C3%A4.JPG" 
-             alt="saarikierros" style="width: 100%; border-radius: 8px;" />
+        <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F889133573%2F2353556532113%2F1%2Foriginal.20241031-190400?w=600&auto=format%2Ccompress&q=75&sharp=10&s=2f5111d2709357883f20973f2eb3737a" 
+             alt="kahootposter" style="width: 100%; border-radius: 8px;" />
       </div>`
     )
   );
