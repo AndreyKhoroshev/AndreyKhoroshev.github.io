@@ -52,9 +52,9 @@ Object.entries(monthGroups).forEach(([month, days]) => {
     if (dateKey === new Date("2025-06-02").toDateString()) {
       day.addEventListener("click", () =>
         openModal(
-          "2.6.2025 – Musiikkivinkki",
+          "2.6.2025 – Video esimerkki",
           `
-          <p>Tänään fiilistellään klassikkobiisillä</p>
+          <p>Kissa pyörii!</p>
           <div style="margin-top: 10px;">
             <iframe width="100%" height="215" 
               src="https://www.youtube.com/embed/U2Fjfqm-7g8?rel=0&autohide=1&showinfo=0" 
@@ -66,19 +66,7 @@ Object.entries(monthGroups).forEach(([month, days]) => {
       );
       day.classList.add("clickable");
 
-} else if (dateKey === new Date("2025-07-20").toDateString()) {
-  day.addEventListener("click", () =>
-    openModal(
-      "20.7.2025 – Kesäkuva",
-      `
-      <p>Heinäkuun katti!:</p>
-      <div style="margin-top: 10px;">
-        <img src="https://t3.ftcdn.net/jpg/01/03/64/44/360_F_103644471_eKnH4wVwEzgkLsiZrPtgkd4IcfTuaa14.jpg" 
-             alt="Kesäkuva" style="width: 100%; border-radius: 8px;" />
-      </div>`
-    )
-  );
-  day.classList.add("clickable");
+
 
 } else if (dateKey === new Date("2025-06-20").toDateString()) {
   day.addEventListener("click", () =>
