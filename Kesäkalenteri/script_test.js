@@ -48,15 +48,8 @@ Object.entries(monthGroups).forEach(([month, days]) => {
     const isPastOrToday = date <= today;
     const dateKey = date.toDateString();
 
-    // Esimerkki: 19.5. teksti
-    if (dateKey === new Date("2025-05-19").toDateString()) {
-      day.addEventListener("click", () =>
-        openModal("19.5.2025", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae.")
-      );
-      day.classList.add("clickable"); 
-
     // Esimerkki: 2.6. YouTube-video
-    } else if (dateKey === new Date("2025-06-02").toDateString()) {
+    if (dateKey === new Date("2025-06-02").toDateString()) {
       day.addEventListener("click", () =>
         openModal(
           "2.6.2025 – Musiikkivinkki",
