@@ -162,7 +162,7 @@ Object.entries(monthGroups).forEach(([month, days]) => {
       <p>Helsinki City Festival</p>
       <a href="https://www.helsinkicityfestival.fi/" </a>
       <div style="margin-top: 10px;">
-        <img src="https://tapahtumainfo.fi/artikkelikuvat/343475.jpg" 
+        <img src="https://scontent-hel3-1.xx.fbcdn.net/v/t51.75761-15/482567788_17954248589922207_422354054858761026_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=EVNk17uIdL0Q7kNvwGnmzUE&_nc_oc=Adl_48FcSd_zzF0i9ei0uXEq82L0dJ9G08F6KXiR30PkhWmshUNkAGYcOsZKow3uMdQ&_nc_zt=23&_nc_ht=scontent-hel3-1.xx&_nc_gid=MvlisEmBmoTWMp2fHSokag&oh=00_AfJeZuFYd7FpTbZX6JNY7GR9bxmwVLYFiIQoUwyaEXtKjg&oe=6820E44E" 
              alt="helsinkicityfest" style="width: 100%; border-radius: 8px;" />
       </div>`
     )
